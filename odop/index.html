@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="du">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- ----------main style------------ -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- ------------Google Fonts-------------- -->
+        <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <!-- --------------Icon pack font-awesome----------- -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- --------------------Google Maps Api---------------- -->
+        <script defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl7F3URup7S4Of3R3cJQLk535vNnUQRzg&callback=initMap">
+        </script>
+        <title>Apna Bazar | World's Best Market</title>
+    </head>
+
+    <body>
+        <div class="header">
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="images/apna bazar.png" style="height:60px;" alt="logo-image">
+                    </div>
+                    <nav>
+                        <ul id="menu-items">
+                            <li><a href="">Home</a></li>
+                            <li><a href="index2.html">Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="register.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <img src="images/cart.png" alt="cart" width="30px" height="30px" class="cart-img">
+                    <img src="images/menu.png" alt="menu" width="30px" height="30px" class="menu-icon" onclick="menutoggle()">
+                </div>
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <h1 class="text-white">Great deals happening <br> Shop Now!</h1>
+                        <p>Enjoy a safe, convenient shopping experience on Apna Bazar</p>
+                        <p>Get Original products directly from local maunfacturers</p>
+                        <a href="" class="btn btn-main">Shop Now &#8594;</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="images/oneDistrict.webp" alt="banner-image" class="center">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- featured products -->
+        <div class="small-container mt-5">
+            <h2 class="title">Featured Products</h2>
+            <div class="row horizontal-scroll-wrapper squares">
+                <div class="col-4 box-container">
+                    <div class="image-overlay"></div>
+                    <img src="images/dist1.jpg" alt="leather">
+                    <h5 class="product_name">Kanpur Leather</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <!--<div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">Leather</h3>
+                        <h4 class="content-price">Rs200</h4>
+                        <div class="content-btn btn btn-secondary" title="Add to Cart"><i class="fa fa-cart-plus" aria-hidden="true"></i></div>
+                    </div>
+                    <p class="price_name" >Rs1000.99</p>
+                    <!-- <div class="btn btn-secondary" title="Preview Item"><i class="fa fa-cart-plus" aria-hidden="true"></i>
+                    </div> -->
+                    <p class="price_name" >Starting Range  199</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/dist3.jpg" alt="Lock">
+                    <h5 class="product_name">Aligarh Lock</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Starting Range 200</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/dist22.jpg" alt="Lock">
+                    <h5 class="product_name">Ayodhya Jaggery</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <p class="price_name" >Starting Range 400</p>
+                </div>
+                <div class="col-4 box-container">
+                    <img src="images/dist6.jpg" alt="pottery">
+                    <h5 class="product_name">Azamgarh Black Pottery</h5>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <p class="price_name" >Starting Range 1000</p>
+                </div>
+            </div>
+            <!-- Latest products -->
+    
+        </div>
+
+        <!-- offer -->
+        <div class="offer">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="images/banarasi.png" class="offer-img">
+                    </div>
+                    <div class="col-6 text-data text-white">
+                        <p>Top Banarsi Sarees you should take it directly from Weavers </p>
+                        <h1>Best Sarees limited offer!</h1>
+                        
+                        <a href="" class="btn">Buy Now  </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- brands -->
+        <div class="brands">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="images/raksharan.png" alt="amazon logo">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/handloom.jpg" alt="apple logo">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/handloom1.webp" alt="samsung logo">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/handloom3.webp" alt="mastercard logo">
+                    </div>
+                    <div class="col-3">
+                        <img src="images/fabrics.jpg" alt="mastercard logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------footer------ -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                   
+                    
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">Copyright 2022 Apna Bazar </p>
+            </div>
+        </div>
+        <script src="main.js"></script>
+          
+    </body>
+
+</html>
